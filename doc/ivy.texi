@@ -696,6 +696,9 @@ display short aliases:
 @item @kbd{u}
 @tab @kbd{C-c C-o}
 @tab @code{ivy-occur}
+@item @kbd{C}
+@tab @kbd{M-C}
+@tab @code{ivy-toggle-case-fold}
 @end multitable
 
 Hydra reduces key strokes, for example: @kbd{C-n C-n C-n C-n} is @kbd{C-o
@@ -745,13 +748,6 @@ Select the next action.
 @kindex a
 @indentedblock
 Use a menu to select an action.
-@end indentedblock
-@subsubheading @kbd{C} (@code{ivy-toggle-case-fold})
-@vindex ivy-toggle-case-fold
-@kindex C
-@indentedblock
-Toggle case folding (match both upper and lower case
-characters for lower case input).
 @end indentedblock
 
 Hydra menu also offers bindings for marking multiple candidates:
@@ -1381,6 +1377,13 @@ Toggle between input as regexp or not.
 
 Switch to matching literally since file names include @code{.}, which
 is for matching any char in regexp mode.
+@end indentedblock
+@subsubheading @kbd{M-C} (@code{ivy-toggle-case-fold})
+@vindex ivy-toggle-case-fold
+@kindex M-C
+@indentedblock
+Toggle case folding (match both upper and lower case
+characters for lower case input).
 @end indentedblock
 @defopt ivy-extra-directories
 Decide if you want to see @code{../} and @code{./} during file name
